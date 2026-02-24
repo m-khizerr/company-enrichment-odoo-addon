@@ -1,0 +1,89 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<odoo>
+
+    <!-- Partner Form View: Company Enrichment tab -->
+    <record id="res_partner_view_form_enrichment" model="ir.ui.view">
+        <field name="name">res.partner.form.inherit.company_enrichment</field>
+        <field name="model">res.partner</field>
+        <field name="inherit_id" ref="base.view_partner_form"/>
+        <field name="arch" type="xml">
+            <xpath expr="//page[@name='internal_notes']" position="after">
+                <page string="Company Enrichment" name="company_enrichment"
+                      invisible="not is_company">
+
+                    <!-- Hidden helper for keyword tag domain/context -->
+                    <field name="keyword_parent_id" invisible="1"/>
+
+                    <group string="Company Keywords">
+                        <field name="x_is_target_account" widget="boolean_toggle"/>
+                        <field name="category_id" widget="many2many_tags"
+                               string="Keywords"
+                               domain="[('parent_id', '=', keyword_parent_id)]"
+                               context="{'default_parent_id': keyword_parent_id}"
+                               nolabel="1" colspan="2"
+                               options="{'color_field': 'color'}"/>
+                    </group>
+
+                    <group string="Warehouse Information">
+                        <group>
+                            <field name="x_dock_information"/>
+                            <field name="x_delivery_appointment_details"/>
+                        </group>
+                        <group>
+                            <field name="x_receiving_hours" placeholder="e.g. Mon-Fri 8am-4pm"/>
+                        </group>
+                    </group>
+
+                    <group string="Social Media">
+                        <group>
+                            <field name="x_linkedin_url" widget="url" placeholder="https://linkedin.com/company/..."/>
+                            <field name="x_facebook_url" widget="url" placeholder="https://facebook.com/..."/>
+                        </group>
+                        <group>
+                            <field name="x_instagram_url" widget="url" placeholder="https://instagram.com/..."/>
+                            <field name="x_youtube_url" widget="url" placeholder="https://youtube.com/..."/>
+                        </group>
+                    </group>
+
+                    <group string="Company Profile">
+                        <group>
+                            <field name="x_year_founded"/>
+                            <field name="x_employee_count"/>
+                        </group>
+                        <group>
+                            <field name="x_revenue_range"/>
+                        </group>
+                    </group>
+
+                </page>
+            </xpath>
+        </field>
+    </record>
+
+    <!-- Partner Search View: Target Account filter + keyword search -->
+    <record id="res_partner_view_search_enrichment" model="ir.ui.view">
+        <field name="name">res.partner.search.inherit.company_enrichment</field>
+        <field name="model">res.partner</field>
+        <field name="inherit_id" ref="base.view_res_partner_filter"/>
+        <field name="arch" type="xml">
+            <xpath expr="//filter[@name='type_company']" position="after">
+                <separator/>
+                <filter string="Target Accounts" name="target_accounts"
+                        domain="[('x_is_target_account', '=', True)]"/>
+            </xpath>
+        </field>
+    </record>
+
+    <!-- Partner List View: Target Account optional column -->
+    <record id="res_partner_view_list_enrichment" model="ir.ui.view">
+        <field name="name">res.partner.list.inherit.company_enrichment</field>
+        <field name="model">res.partner</field>
+        <field name="inherit_id" ref="base.view_partner_tree"/>
+        <field name="arch" type="xml">
+            <xpath expr="//field[@name='complete_name']" position="after">
+                <field name="x_is_target_account" string="Target" optional="hide"/>
+            </xpath>
+        </field>
+    </record>
+
+</odoo>

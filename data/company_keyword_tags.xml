@@ -1,0 +1,546 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<odoo>
+<data noupdate="1">
+
+    <!--
+        Company Keywords taxonomy.
+        All tags are children of the "Company Keywords" parent so they can be
+        filtered in the enrichment tab via domain on category_id.
+        Add / remove tags here and upgrade the module to sync.
+    -->
+
+    <!-- Parent tag (not assigned directly to partners) -->
+    <record id="tag_company_keywords" model="res.partner.category">
+        <field name="name">Company Keywords</field>
+    </record>
+
+    <!-- A -->
+    <record id="tag_3d_printing" model="res.partner.category">
+        <field name="name">3D Printing</field>
+        <field name="parent_id" ref="tag_company_keywords"/>
+    </record>
+    <record id="tag_accounting" model="res.partner.category">
+        <field name="name">Accounting</field>
+        <field name="parent_id" ref="tag_company_keywords"/>
+    </record>
+    <record id="tag_advertising_marketing" model="res.partner.category">
+        <field name="name">Advertising &amp; Marketing</field>
+        <field name="parent_id" ref="tag_company_keywords"/>
+    </record>
+    <record id="tag_aerospace_defense" model="res.partner.category">
+        <field name="name">Aerospace &amp; Defense</field>
+        <field name="parent_id" ref="tag_company_keywords"/>
+    </record>
+    <record id="tag_agriculture" model="res.partner.category">
+        <field name="name">Agriculture</field>
+        <field name="parent_id" ref="tag_company_keywords"/>
+    </record>
+    <record id="tag_ai_machine_learning" model="res.partner.category">
+        <field name="name">AI &amp; Machine Learning</field>
+        <field name="parent_id" ref="tag_company_keywords"/>
+    </record>
+    <record id="tag_apparel_fashion" model="res.partner.category">
+        <field name="name">Apparel &amp; Fashion</field>
+        <field name="parent_id" ref="tag_company_keywords"/>
+    </record>
+    <record id="tag_architecture" model="res.partner.category">
+        <field name="name">Architecture</field>
+        <field name="parent_id" ref="tag_company_keywords"/>
+    </record>
+    <record id="tag_arts_entertainment" model="res.partner.category">
+        <field name="name">Arts &amp; Entertainment</field>
+        <field name="parent_id" ref="tag_company_keywords"/>
+    </record>
+    <record id="tag_automotive" model="res.partner.category">
+        <field name="name">Automotive</field>
+        <field name="parent_id" ref="tag_company_keywords"/>
+    </record>
+
+    <!-- B -->
+    <record id="tag_b2b" model="res.partner.category">
+        <field name="name">B2B</field>
+        <field name="parent_id" ref="tag_company_keywords"/>
+    </record>
+    <record id="tag_b2c" model="res.partner.category">
+        <field name="name">B2C</field>
+        <field name="parent_id" ref="tag_company_keywords"/>
+    </record>
+    <record id="tag_banking_finance" model="res.partner.category">
+        <field name="name">Banking &amp; Finance</field>
+        <field name="parent_id" ref="tag_company_keywords"/>
+    </record>
+    <record id="tag_biotechnology" model="res.partner.category">
+        <field name="name">Biotechnology</field>
+        <field name="parent_id" ref="tag_company_keywords"/>
+    </record>
+    <record id="tag_building_materials" model="res.partner.category">
+        <field name="name">Building Materials</field>
+        <field name="parent_id" ref="tag_company_keywords"/>
+    </record>
+
+    <!-- C -->
+    <record id="tag_cannabis" model="res.partner.category">
+        <field name="name">Cannabis</field>
+        <field name="parent_id" ref="tag_company_keywords"/>
+    </record>
+    <record id="tag_chemical" model="res.partner.category">
+        <field name="name">Chemical</field>
+        <field name="parent_id" ref="tag_company_keywords"/>
+    </record>
+    <record id="tag_civil_engineering" model="res.partner.category">
+        <field name="name">Civil Engineering</field>
+        <field name="parent_id" ref="tag_company_keywords"/>
+    </record>
+    <record id="tag_cleaning_services" model="res.partner.category">
+        <field name="name">Cleaning Services</field>
+        <field name="parent_id" ref="tag_company_keywords"/>
+    </record>
+    <record id="tag_cloud_computing" model="res.partner.category">
+        <field name="name">Cloud Computing</field>
+        <field name="parent_id" ref="tag_company_keywords"/>
+    </record>
+    <record id="tag_commercial_real_estate" model="res.partner.category">
+        <field name="name">Commercial Real Estate</field>
+        <field name="parent_id" ref="tag_company_keywords"/>
+    </record>
+    <record id="tag_communications" model="res.partner.category">
+        <field name="name">Communications</field>
+        <field name="parent_id" ref="tag_company_keywords"/>
+    </record>
+    <record id="tag_computer_hardware" model="res.partner.category">
+        <field name="name">Computer Hardware</field>
+        <field name="parent_id" ref="tag_company_keywords"/>
+    </record>
+    <record id="tag_computer_software" model="res.partner.category">
+        <field name="name">Computer Software</field>
+        <field name="parent_id" ref="tag_company_keywords"/>
+    </record>
+    <record id="tag_construction" model="res.partner.category">
+        <field name="name">Construction</field>
+        <field name="parent_id" ref="tag_company_keywords"/>
+    </record>
+    <record id="tag_consulting" model="res.partner.category">
+        <field name="name">Consulting</field>
+        <field name="parent_id" ref="tag_company_keywords"/>
+    </record>
+    <record id="tag_consumer_electronics" model="res.partner.category">
+        <field name="name">Consumer Electronics</field>
+        <field name="parent_id" ref="tag_company_keywords"/>
+    </record>
+    <record id="tag_consumer_goods" model="res.partner.category">
+        <field name="name">Consumer Goods</field>
+        <field name="parent_id" ref="tag_company_keywords"/>
+    </record>
+    <record id="tag_cosmetics" model="res.partner.category">
+        <field name="name">Cosmetics</field>
+        <field name="parent_id" ref="tag_company_keywords"/>
+    </record>
+    <record id="tag_cybersecurity" model="res.partner.category">
+        <field name="name">Cybersecurity</field>
+        <field name="parent_id" ref="tag_company_keywords"/>
+    </record>
+
+    <!-- D -->
+    <record id="tag_data_analytics" model="res.partner.category">
+        <field name="name">Data Analytics</field>
+        <field name="parent_id" ref="tag_company_keywords"/>
+    </record>
+    <record id="tag_defense_space" model="res.partner.category">
+        <field name="name">Defense &amp; Space</field>
+        <field name="parent_id" ref="tag_company_keywords"/>
+    </record>
+    <record id="tag_design" model="res.partner.category">
+        <field name="name">Design</field>
+        <field name="parent_id" ref="tag_company_keywords"/>
+    </record>
+    <record id="tag_distribution" model="res.partner.category">
+        <field name="name">Distribution</field>
+        <field name="parent_id" ref="tag_company_keywords"/>
+    </record>
+
+    <!-- E -->
+    <record id="tag_ecommerce" model="res.partner.category">
+        <field name="name">E-Commerce</field>
+        <field name="parent_id" ref="tag_company_keywords"/>
+    </record>
+    <record id="tag_education" model="res.partner.category">
+        <field name="name">Education</field>
+        <field name="parent_id" ref="tag_company_keywords"/>
+    </record>
+    <record id="tag_electrical" model="res.partner.category">
+        <field name="name">Electrical</field>
+        <field name="parent_id" ref="tag_company_keywords"/>
+    </record>
+    <record id="tag_electronics" model="res.partner.category">
+        <field name="name">Electronics</field>
+        <field name="parent_id" ref="tag_company_keywords"/>
+    </record>
+    <record id="tag_energy" model="res.partner.category">
+        <field name="name">Energy</field>
+        <field name="parent_id" ref="tag_company_keywords"/>
+    </record>
+    <record id="tag_engineering" model="res.partner.category">
+        <field name="name">Engineering</field>
+        <field name="parent_id" ref="tag_company_keywords"/>
+    </record>
+    <record id="tag_environmental_services" model="res.partner.category">
+        <field name="name">Environmental Services</field>
+        <field name="parent_id" ref="tag_company_keywords"/>
+    </record>
+    <record id="tag_events" model="res.partner.category">
+        <field name="name">Events</field>
+        <field name="parent_id" ref="tag_company_keywords"/>
+    </record>
+
+    <!-- F -->
+    <record id="tag_fabrication" model="res.partner.category">
+        <field name="name">Fabrication</field>
+        <field name="parent_id" ref="tag_company_keywords"/>
+    </record>
+    <record id="tag_facilities_management" model="res.partner.category">
+        <field name="name">Facilities Management</field>
+        <field name="parent_id" ref="tag_company_keywords"/>
+    </record>
+    <record id="tag_financial_services" model="res.partner.category">
+        <field name="name">Financial Services</field>
+        <field name="parent_id" ref="tag_company_keywords"/>
+    </record>
+    <record id="tag_fitness_wellness" model="res.partner.category">
+        <field name="name">Fitness &amp; Wellness</field>
+        <field name="parent_id" ref="tag_company_keywords"/>
+    </record>
+    <record id="tag_food_beverage" model="res.partner.category">
+        <field name="name">Food &amp; Beverage</field>
+        <field name="parent_id" ref="tag_company_keywords"/>
+    </record>
+    <record id="tag_freight_logistics" model="res.partner.category">
+        <field name="name">Freight &amp; Logistics</field>
+        <field name="parent_id" ref="tag_company_keywords"/>
+    </record>
+    <record id="tag_furniture" model="res.partner.category">
+        <field name="name">Furniture</field>
+        <field name="parent_id" ref="tag_company_keywords"/>
+    </record>
+
+    <!-- G -->
+    <record id="tag_gaming" model="res.partner.category">
+        <field name="name">Gaming</field>
+        <field name="parent_id" ref="tag_company_keywords"/>
+    </record>
+    <record id="tag_government" model="res.partner.category">
+        <field name="name">Government</field>
+        <field name="parent_id" ref="tag_company_keywords"/>
+    </record>
+    <record id="tag_graphic_design" model="res.partner.category">
+        <field name="name">Graphic Design</field>
+        <field name="parent_id" ref="tag_company_keywords"/>
+    </record>
+
+    <!-- H -->
+    <record id="tag_healthcare" model="res.partner.category">
+        <field name="name">Healthcare</field>
+        <field name="parent_id" ref="tag_company_keywords"/>
+    </record>
+    <record id="tag_higher_education" model="res.partner.category">
+        <field name="name">Higher Education</field>
+        <field name="parent_id" ref="tag_company_keywords"/>
+    </record>
+    <record id="tag_hospitality" model="res.partner.category">
+        <field name="name">Hospitality</field>
+        <field name="parent_id" ref="tag_company_keywords"/>
+    </record>
+    <record id="tag_human_resources" model="res.partner.category">
+        <field name="name">Human Resources</field>
+        <field name="parent_id" ref="tag_company_keywords"/>
+    </record>
+    <record id="tag_hvac" model="res.partner.category">
+        <field name="name">HVAC</field>
+        <field name="parent_id" ref="tag_company_keywords"/>
+    </record>
+
+    <!-- I -->
+    <record id="tag_import_export" model="res.partner.category">
+        <field name="name">Import &amp; Export</field>
+        <field name="parent_id" ref="tag_company_keywords"/>
+    </record>
+    <record id="tag_industrial_automation" model="res.partner.category">
+        <field name="name">Industrial Automation</field>
+        <field name="parent_id" ref="tag_company_keywords"/>
+    </record>
+    <record id="tag_industrial_equipment" model="res.partner.category">
+        <field name="name">Industrial Equipment</field>
+        <field name="parent_id" ref="tag_company_keywords"/>
+    </record>
+    <record id="tag_information_technology" model="res.partner.category">
+        <field name="name">Information Technology</field>
+        <field name="parent_id" ref="tag_company_keywords"/>
+    </record>
+    <record id="tag_insurance" model="res.partner.category">
+        <field name="name">Insurance</field>
+        <field name="parent_id" ref="tag_company_keywords"/>
+    </record>
+    <record id="tag_interior_design" model="res.partner.category">
+        <field name="name">Interior Design</field>
+        <field name="parent_id" ref="tag_company_keywords"/>
+    </record>
+    <record id="tag_internet" model="res.partner.category">
+        <field name="name">Internet</field>
+        <field name="parent_id" ref="tag_company_keywords"/>
+    </record>
+
+    <!-- L -->
+    <record id="tag_landscaping" model="res.partner.category">
+        <field name="name">Landscaping</field>
+        <field name="parent_id" ref="tag_company_keywords"/>
+    </record>
+    <record id="tag_legal" model="res.partner.category">
+        <field name="name">Legal</field>
+        <field name="parent_id" ref="tag_company_keywords"/>
+    </record>
+    <record id="tag_life_sciences" model="res.partner.category">
+        <field name="name">Life Sciences</field>
+        <field name="parent_id" ref="tag_company_keywords"/>
+    </record>
+    <record id="tag_logistics_supply_chain" model="res.partner.category">
+        <field name="name">Logistics &amp; Supply Chain</field>
+        <field name="parent_id" ref="tag_company_keywords"/>
+    </record>
+
+    <!-- M -->
+    <record id="tag_machinery" model="res.partner.category">
+        <field name="name">Machinery</field>
+        <field name="parent_id" ref="tag_company_keywords"/>
+    </record>
+    <record id="tag_management_consulting" model="res.partner.category">
+        <field name="name">Management Consulting</field>
+        <field name="parent_id" ref="tag_company_keywords"/>
+    </record>
+    <record id="tag_manufacturing" model="res.partner.category">
+        <field name="name">Manufacturing</field>
+        <field name="parent_id" ref="tag_company_keywords"/>
+    </record>
+    <record id="tag_maritime" model="res.partner.category">
+        <field name="name">Maritime</field>
+        <field name="parent_id" ref="tag_company_keywords"/>
+    </record>
+    <record id="tag_mechanical_engineering" model="res.partner.category">
+        <field name="name">Mechanical Engineering</field>
+        <field name="parent_id" ref="tag_company_keywords"/>
+    </record>
+    <record id="tag_media_entertainment" model="res.partner.category">
+        <field name="name">Media &amp; Entertainment</field>
+        <field name="parent_id" ref="tag_company_keywords"/>
+    </record>
+    <record id="tag_medical_devices" model="res.partner.category">
+        <field name="name">Medical Devices</field>
+        <field name="parent_id" ref="tag_company_keywords"/>
+    </record>
+    <record id="tag_metal_fabrication" model="res.partner.category">
+        <field name="name">Metal Fabrication</field>
+        <field name="parent_id" ref="tag_company_keywords"/>
+    </record>
+    <record id="tag_mining" model="res.partner.category">
+        <field name="name">Mining</field>
+        <field name="parent_id" ref="tag_company_keywords"/>
+    </record>
+
+    <!-- N -->
+    <record id="tag_nanotechnology" model="res.partner.category">
+        <field name="name">Nanotechnology</field>
+        <field name="parent_id" ref="tag_company_keywords"/>
+    </record>
+    <record id="tag_nonprofit" model="res.partner.category">
+        <field name="name">Nonprofit</field>
+        <field name="parent_id" ref="tag_company_keywords"/>
+    </record>
+
+    <!-- O -->
+    <record id="tag_oil_gas" model="res.partner.category">
+        <field name="name">Oil &amp; Gas</field>
+        <field name="parent_id" ref="tag_company_keywords"/>
+    </record>
+
+    <!-- P -->
+    <record id="tag_packaging" model="res.partner.category">
+        <field name="name">Packaging</field>
+        <field name="parent_id" ref="tag_company_keywords"/>
+    </record>
+    <record id="tag_pest_control" model="res.partner.category">
+        <field name="name">Pest Control</field>
+        <field name="parent_id" ref="tag_company_keywords"/>
+    </record>
+    <record id="tag_petrochemical" model="res.partner.category">
+        <field name="name">Petrochemical</field>
+        <field name="parent_id" ref="tag_company_keywords"/>
+    </record>
+    <record id="tag_pharmaceutical" model="res.partner.category">
+        <field name="name">Pharmaceutical</field>
+        <field name="parent_id" ref="tag_company_keywords"/>
+    </record>
+    <record id="tag_photography" model="res.partner.category">
+        <field name="name">Photography</field>
+        <field name="parent_id" ref="tag_company_keywords"/>
+    </record>
+    <record id="tag_plastics" model="res.partner.category">
+        <field name="name">Plastics</field>
+        <field name="parent_id" ref="tag_company_keywords"/>
+    </record>
+    <record id="tag_plumbing" model="res.partner.category">
+        <field name="name">Plumbing</field>
+        <field name="parent_id" ref="tag_company_keywords"/>
+    </record>
+    <record id="tag_printing" model="res.partner.category">
+        <field name="name">Printing</field>
+        <field name="parent_id" ref="tag_company_keywords"/>
+    </record>
+    <record id="tag_professional_services" model="res.partner.category">
+        <field name="name">Professional Services</field>
+        <field name="parent_id" ref="tag_company_keywords"/>
+    </record>
+    <record id="tag_property_management" model="res.partner.category">
+        <field name="name">Property Management</field>
+        <field name="parent_id" ref="tag_company_keywords"/>
+    </record>
+    <record id="tag_public_relations" model="res.partner.category">
+        <field name="name">Public Relations</field>
+        <field name="parent_id" ref="tag_company_keywords"/>
+    </record>
+    <record id="tag_publishing" model="res.partner.category">
+        <field name="name">Publishing</field>
+        <field name="parent_id" ref="tag_company_keywords"/>
+    </record>
+
+    <!-- R -->
+    <record id="tag_real_estate" model="res.partner.category">
+        <field name="name">Real Estate</field>
+        <field name="parent_id" ref="tag_company_keywords"/>
+    </record>
+    <record id="tag_recycling" model="res.partner.category">
+        <field name="name">Recycling</field>
+        <field name="parent_id" ref="tag_company_keywords"/>
+    </record>
+    <record id="tag_renewable_energy" model="res.partner.category">
+        <field name="name">Renewable Energy</field>
+        <field name="parent_id" ref="tag_company_keywords"/>
+    </record>
+    <record id="tag_restaurants" model="res.partner.category">
+        <field name="name">Restaurants</field>
+        <field name="parent_id" ref="tag_company_keywords"/>
+    </record>
+    <record id="tag_retail" model="res.partner.category">
+        <field name="name">Retail</field>
+        <field name="parent_id" ref="tag_company_keywords"/>
+    </record>
+    <record id="tag_robotics" model="res.partner.category">
+        <field name="name">Robotics</field>
+        <field name="parent_id" ref="tag_company_keywords"/>
+    </record>
+
+    <!-- S -->
+    <record id="tag_saas" model="res.partner.category">
+        <field name="name">SaaS</field>
+        <field name="parent_id" ref="tag_company_keywords"/>
+    </record>
+    <record id="tag_safety_security" model="res.partner.category">
+        <field name="name">Safety &amp; Security</field>
+        <field name="parent_id" ref="tag_company_keywords"/>
+    </record>
+    <record id="tag_semiconductor" model="res.partner.category">
+        <field name="name">Semiconductor</field>
+        <field name="parent_id" ref="tag_company_keywords"/>
+    </record>
+    <record id="tag_signage" model="res.partner.category">
+        <field name="name">Signage</field>
+        <field name="parent_id" ref="tag_company_keywords"/>
+    </record>
+    <record id="tag_social_media" model="res.partner.category">
+        <field name="name">Social Media</field>
+        <field name="parent_id" ref="tag_company_keywords"/>
+    </record>
+    <record id="tag_solar_energy" model="res.partner.category">
+        <field name="name">Solar Energy</field>
+        <field name="parent_id" ref="tag_company_keywords"/>
+    </record>
+    <record id="tag_staffing_recruiting" model="res.partner.category">
+        <field name="name">Staffing &amp; Recruiting</field>
+        <field name="parent_id" ref="tag_company_keywords"/>
+    </record>
+    <record id="tag_storage" model="res.partner.category">
+        <field name="name">Storage</field>
+        <field name="parent_id" ref="tag_company_keywords"/>
+    </record>
+    <record id="tag_sustainability" model="res.partner.category">
+        <field name="name">Sustainability</field>
+        <field name="parent_id" ref="tag_company_keywords"/>
+    </record>
+
+    <!-- T -->
+    <record id="tag_technology" model="res.partner.category">
+        <field name="name">Technology</field>
+        <field name="parent_id" ref="tag_company_keywords"/>
+    </record>
+    <record id="tag_telecommunications" model="res.partner.category">
+        <field name="name">Telecommunications</field>
+        <field name="parent_id" ref="tag_company_keywords"/>
+    </record>
+    <record id="tag_textiles" model="res.partner.category">
+        <field name="name">Textiles</field>
+        <field name="parent_id" ref="tag_company_keywords"/>
+    </record>
+    <record id="tag_tourism" model="res.partner.category">
+        <field name="name">Tourism</field>
+        <field name="parent_id" ref="tag_company_keywords"/>
+    </record>
+    <record id="tag_training_development" model="res.partner.category">
+        <field name="name">Training &amp; Development</field>
+        <field name="parent_id" ref="tag_company_keywords"/>
+    </record>
+    <record id="tag_transportation" model="res.partner.category">
+        <field name="name">Transportation</field>
+        <field name="parent_id" ref="tag_company_keywords"/>
+    </record>
+
+    <!-- U -->
+    <record id="tag_utilities" model="res.partner.category">
+        <field name="name">Utilities</field>
+        <field name="parent_id" ref="tag_company_keywords"/>
+    </record>
+
+    <!-- V -->
+    <record id="tag_veterinary" model="res.partner.category">
+        <field name="name">Veterinary</field>
+        <field name="parent_id" ref="tag_company_keywords"/>
+    </record>
+
+    <!-- W -->
+    <record id="tag_warehousing" model="res.partner.category">
+        <field name="name">Warehousing</field>
+        <field name="parent_id" ref="tag_company_keywords"/>
+    </record>
+    <record id="tag_waste_management" model="res.partner.category">
+        <field name="name">Waste Management</field>
+        <field name="parent_id" ref="tag_company_keywords"/>
+    </record>
+    <record id="tag_water_treatment" model="res.partner.category">
+        <field name="name">Water Treatment</field>
+        <field name="parent_id" ref="tag_company_keywords"/>
+    </record>
+    <record id="tag_web_design" model="res.partner.category">
+        <field name="name">Web Design</field>
+        <field name="parent_id" ref="tag_company_keywords"/>
+    </record>
+    <record id="tag_web_development" model="res.partner.category">
+        <field name="name">Web Development</field>
+        <field name="parent_id" ref="tag_company_keywords"/>
+    </record>
+    <record id="tag_wholesale" model="res.partner.category">
+        <field name="name">Wholesale</field>
+        <field name="parent_id" ref="tag_company_keywords"/>
+    </record>
+    <record id="tag_wine_spirits" model="res.partner.category">
+        <field name="name">Wine &amp; Spirits</field>
+        <field name="parent_id" ref="tag_company_keywords"/>
+    </record>
+
+</data>
+</odoo>
